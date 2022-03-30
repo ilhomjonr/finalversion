@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacts.css" />
+  </head>
+  <body>
+    <header class="p40px">
+      <div class="max header1">
+        <div class="margina allinline flex justify-between items-center header">
+          <div class="relative logo md:mr-4">
+            <a href="./index.html">
+              <div>
+                <img
+                  class="w-full h-full object-fill"
+                  src="./main/logo.png"
+                  alt="logo of company"
+                  class="logo"
+                /></div
+            ></a>
+          </div>
+          <div class="hidden xl:block">
+            <ul class="headerul flex items-center">
+              <li>
+                <a href="./Aboutus.html" class="oran headerp mr-6 lg:mr-12"
+                  >About us</a
+                >
+              </li>
+              <li class="flex items-center hovercatalog">
+                <a href="Catalog.html" class="oran cataloghover headerp mr-2"
+                  >Catalog
+                </a>
+                <div class="dropdown rounded-2xl lg:mr-12 mr-6">
+                  <div class="arrowun">
+                    <svg
+                      class="w-6 h-6 md:w-4 md:h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex justify-center">
+                    <div class="dropdown-content">
+                      <a
+                        href="/Catalog.html#intraocularLenses"
+                        class="oran headerp"
+                        >Intraocular Lenses</a
+                      >
+                      <a href="/Catalog.html#lensinjector" class="oran headerp"
+                        >Lens Injectors</a
+                      >
+                      <a href="/Catalog.html#gels" class="oran headerp"
+                        >Viscoelastic Gels</a
+                      >
+                      <a href="/Catalog.html#sutures" class="oran headerp"
+                        >Sutures</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="Blog.html" class="oran headerp mr-6 lg:mr-12">Blog</a>
+              </li>
+              <li>
+                <a href="Contacts.html" class="headerp oran mr-6 lg:mr-12"
+                  >Contacts</a
+                >
+              </li>
+              <li class="flex items-center hovercatalog">
+                <a href="" class="oran mr-1 headerp mr-2">Eng </a>
+                <div class="dropdown">
+                  <div class="arrowun">
+                    <svg
+                      class="w-6 h-6 md:w-4 md:h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-content">
+                    <a href="#" class="oran headerp">Русский</a>
+                    <a href="#" class="oran headerp">Узбекский</a>
+                    <a href="#" class="oran headerp">Английский</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="xl:hidden">
+            <div class="" id="headerburger">
+              <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+                >&#9776;</span
+              >
+              <div id="myNav" class="overlay">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <div class="overlay-content">
+                  <a href="./Aboutus.html" class="oran burgerp mb-2"
+                    >About us</a
+                  >
+
+                  <a href="Catalog.html" class="oran burgerp mr-1 mb-2"
+                    >Catalog
+                  </a>
+                  <a href="Blog.html" class="oran burgerp mb-2">Blog</a>
+                  <a href="Contacts.html" class="burgerp oran mb-2">Contacts</a>
+                  <a href="" class="oran mr-1 burgerp mb-2">Eng </a>
+                </div>
+              </div>
+              <div class="hidden" id="headermenu">
+                <div>
+                  <ul class="headerul">
+                    <li>
+                      <a href="./Aboutus.html" class="oran headerp mb-2"
+                        >About us</a
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <a href="Catalog.html" class="oran headerp mr-1 mb-2"
+                        >Catalog
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Blog.html" class="oran headerp mb-2">Blog</a>
+                    </li>
+                    <li>
+                      <a href="Contacts.html" class="headerp mb-2 oran"
+                        >Contacts</a
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <a href="" class="oran mr-1 headerp mb-2">Eng </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="pt-28 mx-1">
+      <div class="max mx-1 pb-10">
+        <div class="orange w-6 md:w-12 h-0.5"></div>
+        <h1 class="allh1">Contacts</h1>
+      </div>
+    </div>
+
+    <div class="mapall py-8">
+      <div class="tabmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5496.242457785468!2d69.27867082794702!3d41.312174054759836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2sAmir%20Temur%20Square!5e0!3m2!1sen!2s!4v1645873454220!5m2!1sen!2s"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="h-96 w-full"
+          id="tabmap"
+        ></iframe>
+      </div>
+      <div class="diva lg:w-2/4 2xl:w-1/3 lg:h-72">
+        <div class="ourgoals tabcontainer rounded-xl text-white">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openCity(event, 'London')"
+              id="defaultOpen"
+            >
+              London
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Kazakstan')">
+              Kazakastan
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Uzbekistan')">
+              Uzbekistan
+            </button>
+          </div>
+          <hr />
+
+          <!-- Tab content -->
+          <div id="London" class="tabcontent">
+            <p class="tabh6">Address:</p>
+            <h3 class="tabh3">
+              Our headquarter: Suite AM 160, 298 Romford road, Forest Gate, E7
+              9HD
+            </h3>
+            <p class="tabh6">Email:</p>
+            <a href="mailto:info@biolabgroups.com" class="tabh3"
+              >info@biolabgroups.com
+            </a>
+            <p class="tabh6">Number:</p>
+            <a href="tel:+442080898343" class="tabh3">+442080898343</a>
+          </div>
+          <div id="Kazakstan" class="tabcontent">
+            <p class="tabh6">Address:</p>
+            <p class="tabh3">
+              Kazakhstan: 21A Rsykulov, Sanjar Jandosov street, Shymkent,
+              Kazakhstan
+            </p>
+            <p class="tabh6">Email:</p>
+            <a href="mailto:info@biolabgroups.com" class="tabh3"
+              >info@biolabgroups.com</a
+            >
+            <p class="tabh6">Number:</p>
+            <a href="tel:+998951959195" class="tabh3">+998951959195</a>
+          </div>
+          <div id="Uzbekistan" class="tabcontent">
+            <p class="tabh6">Address:</p>
+
+            <h3 class="tabh3">
+              9 Bunyodkor Main Street, Chilonzor district, Tashkent, Uzbekistan
+            </h3>
+            <p class="tabh6">Email:</p>
+            <a href="mailto:info@biolabgroups.com">
+              <h3 class="tabh3">info@biolabgroups.com</h3></a
+            >
+            <p class="tabh6">Number:</p>
+            <a href="tel:+998951959195">
+              <h3 class="tabh3">+998951959195</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-36 pb-16 mx-1 lg:pt-2">
+      <div
+        class="lg:mx-auto rounded-3xl py-2 mb-20 lg:mx-10 mt-8 beforefoot max"
+        id="getstarted"
+      >
+        <div class="py-2 mt-8">
+          <div class="md:mt-10 mt-6 mx-2">
+            <div class="orange w-12 h-0.5"></div>
+            <h1 class="firh">Contact with us</h1>
+            <p class="lg:mb-4 allp">
+              Leave a request and we will contact you shortly
+            </p>
+            <div>
+              <div
+                class="flex flex-col justify-center items-center md:block mx-1"
+              >
+                <form>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    maxlength="30"
+                    placeholder="Name"
+                    class="ino inpu rounded-3xl contactopacity md:mb-6 mb-2 pl-4"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    maxlength="30"
+                    placeholder="Email"
+                    class="ino inpu rounded-3xl contactopacity mb-2 md:mb-4 pl-4"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    maxlength="30"
+                    placeholder="Message"
+                    class="ino inpu1 rounded-3xl contactopacity mb-1 pl-4"
+                  /><br />
+                  <div
+                    class="md:pt-6 items-center flex justify-center lg:block"
+                  >
+                    <input
+                      type="submit"
+                      value="Send"
+                      class="orange buttons text-white allp md:h-12 h-10 w-72 md:w-40 rounded-3xl shadow-2xl lg:mb-2"
+                      onclick="toast()"
+                    />
+                    <div id="snackbar">Succesfully sent:)</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="ourgoals text-white pt-4 w-full text-center md:text-left">
+      <div class="2xl:flex 2xl:justify-center max">
+        <div class="flex justify-center items center">
+          <div
+            class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 margina py-2"
+          >
+            <div>
+              <img src="./main/logowhite.png" alt="logo of company" />
+              <p class="mt-12 mb-2 footerp">We are in social networks</p>
+              <div
+                class="flex justify-center items-center md:justify-start md:items-start"
+              >
+                <a href="#" class="bg-orange-500 mr-6"
+                  ><img src="./main/Vector (6).svg" alt=""
+                /></a>
+                <a href="#" class="bg-orange-500 mr-6"
+                  ><img src="./main/instagram.svg" alt=""
+                /></a>
+                <a href="#" class="bg-orange-500 mr-6"
+                  ><img src="./main/telegram.svg" alt=""
+                /></a>
+                <a href="#" class="bg-orange-500 mr-6"
+                  ><img src="./main/Vector (5).svg" alt=""
+                /></a>
+              </div>
+              <p class="md:mt-12 mt-4 footerp md:mb-1">
+                Copyright © 2022 Biolab
+              </p>
+              <p class="footerp">All rights reserved.</p>
+            </div>
+            <div class="flex justify-center items-center lg:block">
+              <div>
+                <h1 class="md:pb-2 footerh4">Sections</h1>
+                <ul class="allul">
+                  <li class="md:py-1">
+                    <a href="./Aboutus.html" class="allul">About us</a>
+                  </li>
+                  <li class="md:py-1">
+                    <a href="./Catalog.html" class="allul">Catalog</a>
+                  </li>
+                  <li class="md:py-1">
+                    <a href="index.html#partner" class="allul">Partners</a>
+                  </li>
+
+                  <li class="md:py-1">
+                    <a href="./Blog.html" class="allul">BLog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex jusify-center items-center footadress">
+              <div class="">
+                <h1 class="pb-4 footerh4">Addresses</h1>
+
+                <a href="#" class="md:pb-2 allul flex"
+                  ><img src="./media/location icon.svg" alt="" class="mr-1" />
+                  Our headquarter:</a
+                >
+                <p class="md:pb-2 footadp lg:ml-4">
+                  Suite AM 160, 298 Romford road, Forest Gate, E7 9HD
+                </p>
+                <a href="#" class="md:pb-2 allul flex"
+                  ><img
+                    src="./media/location icon.svg"
+                    alt=""
+                    class="mr-1"
+                  />Representative offices:</a
+                >
+
+                <p class="md:pb-2 footadp lg:ml-4">
+                  Kazakhstan: 21A Rsykulov, Sanjar Jandosov street, Shymkent,
+                  Kazakhstan
+                </p>
+                <a href="#" class="flex allul"
+                  ><img
+                    src="./media/location icon.svg"
+                    alt=""
+                    class="mr-1"
+                  />Representative offices:</a
+                >
+                <p class="md:pb-2 footadp ml-4 lg:ml-4">
+                  Uzbekistan: 9 Bunyodkor Main Street, Chilonzor district,
+                  Tashkent, Uzbekistan
+                </p>
+              </div>
+            </div>
+            <div class="justify-center">
+              <h1 class="pb-2 footerh4">Contacts</h1>
+              <div class="flex">
+                <img src="./media/telegram icon.svg" alt="" class="mr-1" />
+                <a
+                  href="tel:+442080898343"
+                  class="md:py-1 flex footerp xl:mb-2 justify-center mb-1"
+                >
+                  +442080898343 London
+                </a>
+              </div>
+              <div class="flex">
+                <img src="./media/telegram icon.svg" alt="" class="mr-1" /> +998
+
+                <a
+                  href="tel:+998951959195"
+                  class="md:py-1 flex footerp xl:mb-2 justify-center mb-1"
+                >
+                  95 195 91 95 Tashkent
+                </a>
+              </div>
+              <div class="flex items-center flex-row">
+                <img src="./media/location icon.svg" alt="" class="mr-1" />
+
+                <a
+                  href="mailto: info@biolabgroups.com"
+                  class="md:py-1 flex footerp xl:mb-2 justify-center mb-1"
+                >
+                  info@biolabgroups.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./component.js"></script>
+  </body>
+</html>
